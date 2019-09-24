@@ -5,13 +5,13 @@ _____________
 * [SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKS (ICLR 2017)](https://openreview.net/pdf?id=SJU4ayYgl)
 
 Authors propose new type of convolution layers which also consider information extracted from graph through normalized Laplacian of that graph. Convolutions are calculated as follows:  
-
-<img src="./pics/GCN_layer.png" width="30%" ></img>  
+<p align="center">
+<img src="./pics/GCN_layer.png" width="30%" >
 
 <img src="./pics/A_det.png" width="11%" >  
 
 <img src="./pics/D_det.png" width="11%" >   
-
+</p>
 where A - is adjacency matrix, H_l - is output of layer l and W is a matrix of convolution parameters. The main disadvantage of that method is that every convolution step is is applied to every graph node i.e. it is applied to the whole training dataset. **Thomas suggests**: "A good way to address the memory issue is to use some form of mini-batching, as e.g. in GraphSAGE: https://arxiv.org/abs/1706.02216" 
 
 * [Multi-Label Image Recognition with Graph Convolutional Networks (CVPR 2019)](https://arxiv.org/abs/1904.03582#)  
@@ -22,9 +22,10 @@ Authors proposed GCN-like architecture for mapping labels from multilabeling tas
 clusters (e.g., kitchen related vs. living room related) may
 become indistinguishable. To alleviate this problem, authors
 propose the following re-weighted scheme:  
-
+<p align="center">
 <img src="./pics/reweightscheme.png" width="28%" >
-
+</p>
 The proposed architecture:  
-
+<p align="center">
 <img src="./pics/ml-gcn.png" width="70%" >
+</p>
