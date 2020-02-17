@@ -1,0 +1,16 @@
+\frametitle{Neural Architecture Search}
+
+\begin{block}{Итоговый алгоритм}
+С помощью вышеупомянутого REINFORCE rule градиент нашего функционала принимает следующий вид:
+\begin{center}
+$ \nabla_{\theta_c} J(\theta_c) = \frac{1}{m}\sum \limits_{k=1}^m  \sum \limits_{t=1}^T \nabla_{\theta_c} \log{P(a_t | a_{(t-1):1}; \theta_c)}(R_k-b)$
+\end{center}
+
+Где $m$ --- размер batch'a, созданных controller'ом архитектур,
+
+$R_k$ --- вознаграждение, которое получено для данной архитектуры,
+
+$T$ --- количество гиперпараметров, которые controller должен определить,
+
+$P$ --- вероятностная модель, которую моделирует controller.
+\end{block}

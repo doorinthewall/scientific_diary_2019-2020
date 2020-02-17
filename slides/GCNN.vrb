@@ -1,0 +1,18 @@
+\frametitle{Зачем?}
+\begin{block}{}
+\begin{itemize}
+
+\item Данные представлены в виде графа (например молекулы).
+
+\item Можно обучать классификаторы для multilabeling.
+
+\item Предсказание и распознавание действий.
+\end{itemize}
+\end{block}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.18]{/home/alex/python/Master_course/scientific_diary_2019-2020/slides/pics/GCNN-major.png}
+\end{center}
+\end{figure}
+

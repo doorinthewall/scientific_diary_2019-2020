@@ -1,0 +1,34 @@
+1) Необходимо ли говорить о других методах поиска архитектуры сети, например о тех что указаны в статье?
+
+	Hyperparameter optimization is an important research topic in machine learning, and is widely used
+	in practice (Bergstra et al., 2011; Bergstra & Bengio, 2012; Snoek et al., 2012; 2015; Saxena &
+	Verbeek, 2016). Despite their success, these methods are still limited in that they only search models
+	from a fixed-length space. In other words, it is difficult to ask them to generate a variable-length
+	configuration that specifies the structure and connectivity of a network. In practice, these methods
+	often work better if they are supplied with a good initial model (Bergstra & Bengio, 2012; Snoek
+	et al., 2012; 2015). There are Bayesian optimization methods that allow to search non fixed length
+	architectures (Bergstra et al., 2013; Mendoza et al., 2016), but they are less general and less flexible
+	than the method proposed in this paper.
+	Modern neuro-evolution algorithms, e.g., Wierstra et al. (2005); Floreano et al. (2008); Stanley et al.
+	(2009), on the other hand, are much more flexible for composing novel models, yet they are usually
+	less practical at a large scale. Their limitations lie in the fact that they are search-based methods,
+	thus they are slow or require many heuristics to work well.
+
+2) ...Стоп, мета-лернинг типа нужно именно на нем сконцентрировать внимание? и статьи наверное именно приведенные по мета-лернинг 	
+почитать?
+	Also related to our work is the idea of learning to learn or meta-learning (Thrun & Pratt, 2012), a
+	general framework of using information learned in one task to improve a future task. More closely
+	related is the idea of using a neural network to learn the gradient descent updates for another network
+	(Andrychowicz et al., 2016) and the idea of using reinforcement learning to find update policies
+	for another network (Li & Malik, 2016).
+
+3)  a parameter server approach???
+
+4) что контроллеру подается на вход собсно? 
+	(Every prediction is carried out by a softmax classifier and then fed into the next time step as input.), видимо софтмакс какой-то)))
+
+5) нужно понять про несмещенность
+
+6)Accelerate Training with Parallelism and Asynchronous Updates этот абзац не оч понятен, что делают эти S parameter servers? типа проверяем сразу S начальных приближений? (https://static.googleusercontent.com/media/research.google.com/ru//archive/large_deep_networks_nips2012.pdf)
+
+7) set-selection type attention
